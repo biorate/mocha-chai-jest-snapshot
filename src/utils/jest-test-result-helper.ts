@@ -17,7 +17,7 @@ type SnapshotResult = TestResult["snapshot"];
 export { SnapshotSummary };
 
 export const makeEmptySnapshotSummary = (
-  options: SnapshotStateOptions
+  options: any
 ): SnapshotSummary => {
   const summary = makeEmptyAggregatedTestResult().snapshot;
   summary.didUpdate = options.updateSnapshot === "all";
